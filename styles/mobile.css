@@ -90,7 +90,7 @@ nav ul.flex:after {
 }
 
 .menu-icon {
-    background: url(/images/icon-hamburger.svg) no-repeat center center/cover;
+    background: url(../images/icon-hamburger.svg) no-repeat center center/cover;
     height: 60%;
     width: 90%;
     margin-top: 8px;
@@ -98,7 +98,7 @@ nav ul.flex:after {
 }
 
 .mobile-menu.active .menu-icon {
-    background: url(/images/icon-close.svg) no-repeat center center/cover;
+    background: url(../images/icon-close.svg) no-repeat center center/cover;
     height: 60%;
     width: 90%;
     transform: rotate(180deg);

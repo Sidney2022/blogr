@@ -145,7 +145,7 @@ a {
 
 .hero {
     padding: 40px 0;
-    background: url(/images/bg-pattern-intro-desktop.svg) no-repeat center center/cover;
+    background: url(../images/bg-pattern-intro-desktop.svg) no-repeat center center/cover;
     background-color: hsl(353, 100%, 62%);
     background-size: 150%;
     min-height: 100vh;
@@ -238,7 +238,7 @@ a {
     padding: 100px 0;
     margin-top: 50px;
     color:  hsl(0, 0%, 100%);
-    background-image: url(/images/bg-pattern-circles.svg)  ;
+    background-image: url(../images/bg-pattern-circles.svg)  ;
     background-size: 60%;
     background-position: left bottom  ;
     background-repeat: no-repeat;
