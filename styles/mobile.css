@@ -1,0 +1,249 @@
+/* navigation  */
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 5%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    gap: 0px !important;
+    padding: 20px;
+    border-radius: 10px;
+    display: none !important;
+    box-shadow: 0 0 10px #333;
+    z-index: 10;
+}
+
+nav.active {
+    display: block !important;
+}
+
+
+
+nav ul button , nav a{
+    color: #333 !important;
+}
+
+nav ul.flex, nav .auth-user.flex {
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: gray; */
+    /* margin: 5px; */
+    justify-self: center !important;
+    align-self: center;
+    text-align: center;
+    /* width: 90%; */
+}
+
+nav ul {
+    position: relative ;
+    padding-bottom: 30px;
+}
+
+
+
+nav ul.flex:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    bottom: 0;
+    right: 0;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+
+.header.grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+
+
+.hero-text {
+    padding-top: 100px !important;
+}
+
+.hero-text h1{
+    font-size: 2.3rem;
+    line-height: 1.2em;
+}
+
+
+.hero-text h1 span {
+    display: block;
+
+}
+
+.mobile-menu {
+    /* background-color: green; */
+    height: 100%;
+    width: 50px;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.menu-icon {
+    background: url(./images/icon-hamburger.svg) no-repeat center center/cover;
+    height: 60%;
+    width: 90%;
+    margin-top: 8px;
+    transition: all .2s ease-in-out;
+}
+
+.mobile-menu.active .menu-icon {
+    background: url(./images/icon-close.svg) no-repeat center center/cover;
+    height: 60%;
+    width: 90%;
+    transform: rotate(180deg);
+
+}
+
+
+nav ul li {
+    width: 100%;
+}
+
+.products-card, .company-card, .connect-card {
+    background-color: #eee;
+    padding: 10px;
+    position: static !important;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.auth-user.flex {
+    gap: 10px !important;
+    padding-top: 20px;
+}
+
+.auth-user .btn-light {
+    background: hsl(353, 100%, 62%);
+    color: #fff !important;
+    border: 1px solid transparent;
+}
+
+.btn-light:hover {
+    opacity: .8;
+}
+
+
+nav button:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #aaa;
+    border-radius: 20px;
+}
+
+
+
+nav button:hover:after{
+    width: 100%;
+}
+
+nav button:hover:after, .active.product::after, .active.company::after, .active.contact:after {
+    width: 100%;
+}
+
+
+/* cta */
+.cta h2 {
+    transform: translateY(0);
+    padding-top: 70px;
+}
+
+.cta .design, .cta2 .design{
+    flex-direction: column;
+    /* padding: 20px !important; */
+    text-align: center;
+    /* background-color: bisque; */
+    
+}
+
+.design .design-img {
+    order: -1;
+    transform: translateX(0);
+    margin: 30px 0;
+}
+
+.cta2 .container , .cta .container{
+    padding:  20px !important;
+}
+
+.copy {
+    position: relative;
+    text-align: center;
+    background-position: 100px -200px;
+    background-size: 70%;
+    /* padding-top: ; */
+    margin-top: 250px;
+}
+
+.copy .flex {
+    flex-direction: column !important;
+
+}
+
+
+
+.copy-img { 
+    width: 80%;
+    background-color: red !important;
+    /* padding */
+    margin-bottom: 150px;
+}
+
+.copy h2 {
+    line-height: 1em;
+}
+
+.copy-img img {
+    position: absolute;
+    transform: translateY(-100px);
+    right: 0;
+}
+
+.mob-cta-img {
+    display: block;
+}
+
+.desk-cta-img {
+    display: none;
+}
+
+
+.footer {
+    border-top-right-radius: 150px ;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+
+.footer-grid {
+    grid-template-columns: 1fr;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+
+.footer-grid img {
+    justify-self: center;
+    padding: 30px;
+}
+
+.footer h3 {
+    padding-top: 30px ;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    padding: 0;
+}

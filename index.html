@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" media="screen and (max-width:1000px)" href="styles/mobile.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+    <main >
+       <section class="hero">
+        <div class="container">
+            <header class="header grid">
+                <img src="./images/logo.svg" alt="">
+                
+                <nav>
+                    <ul class="flex">
+                        <li>
+                            <button class="product">products</button>
+                                <img  src="./images/icon-arrow-up.svg" alt="" class="active-arr1">
+                                <img src="./images/icon-arrow-light.svg" alt="" class="def-arr1">
+                                
+                                <div class="products-card card">
+                                    <ul>
+                                        <li><a href="#">overview</a></li>
+                                        <li><a href="#">pricing</a></li>
+                                        <li><a href="#">marketplace</a></li>
+                                        <li><a href="#">features</a></li>
+                                        <li><a href="#">integrations</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li>
+                            <button class="company">company</button>
+                                <img src="./images/icon-arrow-up.svg" alt="" class=" active-arr2">
+                                <img src="./images/icon-arrow-light.svg" alt="" class="def-arr2">
+
+                                <div class="card company-card">
+                                    <ul>
+                                        <li><a href="#">about</a></li>
+                                        <li><a href="#">team</a></li>
+                                        <li><a href="#">marketplace</a></li>
+                                        <li><a href="#">blog</a></li>
+                                        <li><a href="#">careers</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li>
+                            <button class="contact">connect</button>
+                                <img src="./images/icon-arrow-light.svg" alt="" class="def-arr3">
+                                <img src="./images/icon-arrow-up.svg" alt="" class="active-arr3">
+
+                                <div class="connect-card card">
+                                    <ul>
+                                        <li><a href="#">contact</a></li>
+                                        <li><a href="#">newsletter</a></li>
+                                        <li><a href="#">linkedIn</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="auth-user flex">
+                        <li><a  href="#">Login</a></li>
+                        <li><a class="btn btn-light" href="#">Sign Up</a></li>
+                    </div>
+                </nav>
+
+
+                <!-- mobile menu -->
+                <div class="mobile-menu">
+                    <div class="menu-icon ">
+
+                    </div>
+                </div>
+
+            </header>
+
+
+            <div class="hero-text">
+                <h1> <span>a modern</span> publishing platform</h1>
+                <p>grow your audience and build your online brand</p>
+
+                <a href="#" class="btn btn-light">start for free</a>
+                <a href="#" class="btn">learn more</a>
+            </div>
+    </div>
+       </section>
+
+
+       <section class="cta">
+        <div class="container">
+            <h2>designed for the future</h2>
+            <div class="design design-1">
+                <div class="design-text">
+                    <h3>  Introducing an extensible editor
+                    </h3>
+                    <p>  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                        change the looks of a blog.</p>
+
+                        <h3>   Robust content management
+                        </h3>
+                        <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                </div>
+
+                <div class="design-img">
+                    <img class="desk-cta-img" src="./images/illustration-editor-desktop.svg" alt="">
+                    <img class="mob-cta-img" src="./images/illustration-editor-mobile.svg" alt="">
+
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <section class="copy ">
+            <div class="container flex">
+                <div class="copy-img">
+                    <img  src="./images/illustration-phones.svg" alt="">
+
+                </div>
+                <!-- <div class="dummy-copy">
+
+                </div> -->
+                <div class="copy-text">
+                    <h2>state of the art infrastructure</h2>
+                    <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+                        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+                </div>
+            </div>
+       </section>
+
+       <section class="cta cta2">
+            <div class="container">
+               <div class="design design2" >
+                <div class="design-text">
+                    <h3> Free, open, simple</h3>
+                    <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+                        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+                        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn. </p>
+
+                        <h3>  Powerful tooling </h3>
+
+                        <p>  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+                            capable of producing even the most complicated sites. </p>
+                </div>
+                <div class="design-img">
+                    <img class="desk-cta-img" src="./images/illustration-laptop-desktop.svg" alt="">
+                    <img class="mob-cta-img" src="./images/illustration-laptop-mobile.svg" alt="">
+                </div>
+                
+               </div>
+            </div>
+       </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <img src="./images/logo.svg" alt="">
+                <div class="footer-product">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#">overview</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">marketplace</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-company">
+                    <h3>company</h3>
+                    <ul>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">team</a></li>
+                        <li><a href="#">marketplace</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-product">
+                    <h3>connect</h3>
+                    <ul>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">newsletter</a></li>
+                        <li><a href="#">linkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+ 
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./main.js"></script>
+</body>
+</html>

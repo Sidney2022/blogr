@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6em;
+    font-size: 16px;
+    background-color:hsl(0, 0%, 100%);
+    overflow-x: hidden;
+}
+
+a {
+    /* color: #333; */
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: red; */
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+
+.header.grid {
+    /* grid-template-columns: repeat(6, 1fr); */
+}
+.header.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+.header nav {
+    grid-column: 2 /span 5;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+nav {
+
+    grid-column: 2 / span 4;
+}
+
+nav ul.flex {
+    gap: 50px;
+    /* background-color: gray; */
+}
+
+nav ul.flex li {
+    position: relative;
+}
+
+.auth-user {
+    /* background-color: green; */
+    align-self: flex-end;
+    justify-content: end;
+}
+
+nav button {
+    border: 0;
+    background: transparent;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    position: relative;
+    
+}
+
+nav button::after {
+    content: '';
+    width: 0%;
+    background-color: hsl(0, 0%, 100%);
+    height: 3px;
+    display: block;
+    margin: auto;
+    transition:  .3s ease-in-out;
+}
+
+
+/* .active.product::after, .active.company::after, .active.contact:after {
+    content: '';
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    height: 3px;
+    display: block;
+    margin: auto;
+
+} */
+
+nav button:hover:after, .active.product::after, .active.company::after, .active.contact:after {
+    width: 100%;
+}
+
+
+
+a {
+    color: hsl(0, 0%, 100%);;
+}
+
+.btn {
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+
+.btn-light, .btn:hover {
+    background: hsl(0, 0%, 100%);
+    color: rgb(255, 61, 84) ;
+}
+
+.btn-light:hover {
+    background: rgba(255,255,255,.3) ;
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.hero {
+    padding: 40px 0;
+    background: url(./images/bg-pattern-intro-desktop.svg) no-repeat center center/cover;
+    background-color: hsl(353, 100%, 62%);
+    background-size: 150%;
+    min-height: 100vh;
+    color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 150px;
+}
+
+.hero-text {
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero-text .btn {
+    margin-left: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+}
+
+.hero-text p {
+    font-size: 16px;
+    padding: 50px 0 ;
+
+}
+
+.active-arr1, .active-arr2, .active-arr3 {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
+
+.def-arr1.active, .def-arr2.active, .def-arr3.active {
+    display: none;
+}
+
+
+
+.cta h2{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+    transform: translateY(100px);
+}
+.design {
+    display: flex;
+    /* padding-top: 40px ; */
+    padding-right: 0 !important;
+    align-items: center;
+    /* padding-left: 70px; */
+}
+
+.cta .container {
+    padding-right: 0;
+    /* width: 100%; */
+}
+
+.design-text {
+    flex:40%;
+}
+
+.design-img {
+    flex : 50%;
+    transform: translateX(15vw);
+}
+
+.design-img img {
+    width: 100%;
+}
+
+
+.design h3 {
+    padding-bottom: 20px;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.design p {
+    padding-bottom: 50px;
+}
+
+.copy {
+    background-color:  hsl(237, 17%, 21%)  ;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 100px 0;
+    margin-top: 50px;
+    color:  hsl(0, 0%, 100%);
+    background-image: url(./images/bg-pattern-circles.svg)  ;
+    background-size: 60%;
+    background-position: left bottom  ;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.mob-cta-img {
+    display: none;
+}
+
+.copy-img {
+    width: 50%;
+    position: relative;
+    
+}
+
+
+.copy-img img {
+    position: absolute;
+    top: -280px;
+    width: 100%;
+}
+
+.copy-text h2 {
+    padding: 20px 0 ;
+    padding-bottom: 50px;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+
+.copy-text {
+    width: 50%;
+    
+}
+
+.copy .flex {
+    justify-content: space-between;
+}
+
+.design2 .design-img {
+    order: -1;
+    transform: translate(-15vw);
+}
+.cta2 .container {
+    padding-left: 0 ;
+    padding-right: 100px;
+}
+.cta2 {
+    margin: 50px 0 ;
+}
+
+
+.design2 .design-img {
+}
+.design2 .design-text {
+}
+
+
+
+
+
+
+
+.footer {
+    background:  hsl(240, 10%, 16%);
+    padding: 100px 0;
+}
+
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer h3 {
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+}
+
+.footer a {
+    padding: 10px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    color: hsl(240, 2%, 79%);
+    transition: all .4s ease-in-out;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* cards */
+
+.card {
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px ;
+    width: 150px;
+    /* top: ; */
+    left: -40px;
+    /* margin: 0 100px ; */
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #777;
+    display: none;
+    top: 40px;
+}
+
+.card a {
+    color: #333;
+    text-transform: capitalize;
+    padding: 5px ;
+    display: inline-block;
+    
+}
+
+.card a:hover {
+    color: #333;
+    font-weight:bolder;
+}
+
+.connect-card {
+    left: -10px;
+}
+
+.products-card {
+    left: -80px;
+}
+
+.products-card.active, .company-card.active, .connect-card.active {
+    display: block;
+}
